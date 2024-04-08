@@ -1,0 +1,32 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+   .textCentr {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   }
+  
+  .header{
+    height: 150px;
+    
+    background-color: rgb(247, 58, 10);
+  }
+  
+  .main {
+    text-align: center;
+     
+     min-height: calc(100vh - 300px);
+    background-color: rgb(217, 231, 16);
+  }
+  
+  .footer {
+    height: 150px;
+    background-color: rgb(9, 221, 20);
+    }
+
