@@ -1,0 +1,66 @@
+.violet-style {
+    color: blueviolet;
+    font-size: 50px;
+}
+#four {
+    color: bisque;
+}
+.violet-style span {
+    color: yellow;
+}
+
+ul li {
+    color: red;
+}
+
+.fontsize25 {
+    font-size: 25px;
+
+}
+.violet-style.fontsize25 {
+    background-color: tan;
+}
+
+ 
+.experimets {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: rgb(13, 11, 86);
+    background-color: gray;
+    width: 300;
+    height: 300;
+    overflow: hidden;
+
+}
+.masse1 {
+
+    background-color: rgb(238, 30, 23);
+   
+}
+
+.masse2 {
+ 
+    background-color: rgb(200, 212, 20);
+  
+}
+
+.masse3 {
+  
+    background-color: rgb(28, 196, 103);
+   /* border-color: aqua;
+    border-style: dotted;
+    border-width: 5px ; */
+    border: dotted black 5px;
+
+}
+
+.masse {
+    width: 100px;
+    height: 100px;
+    color: rgba(0, 0, 0, 0.932);
+    text-align: center;
+   }
+
