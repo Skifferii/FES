@@ -6,8 +6,8 @@
 main{
   display: flex;
   flex-wrap: no-wrap;
-  
-  }
+}
+
 
 .block {
   display: flex;
@@ -19,20 +19,14 @@ main{
   background-color: brown;
   position: relative;
   overflow:hidden;
-  
-  
-
 }
 
 .block_1 {
   background-image: url(../images/f1.webp);  
- 
 }
 
 .block_2 {
   background-image: url(../images/f2.webp);
-  /* flex-basis: 25%;
-  background-size:cover; */  
 }
 
 .block_3 {
@@ -53,8 +47,8 @@ main{
   height: 100%;
   width: 100%;
   background:linear-gradient(transparent, black);
-
 }
+
 .year {
   position: absolute;
   top: 57%;
