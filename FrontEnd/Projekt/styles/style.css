@@ -8,7 +8,6 @@ main{
   flex-wrap: no-wrap;
 }
 
-
 .block {
   display: flex;
   width: 330px;  
@@ -51,7 +50,7 @@ main{
 
 .year {
   position: absolute;
-  top: 57%;
+  top: 67%;
   left: 2px;
   max-height: 10%;
   font-size: 30px;
@@ -60,7 +59,7 @@ main{
 
 .name {
   position: absolute;
-  top: 65%;
+  top: 75%;
   left: 2px;
   max-height: 10%;
   font-size: 30px;
@@ -69,10 +68,15 @@ main{
 
 .text {
   position: absolute;
-  top: 75%;
+  top: 85%;
   left: 2px;
   max-height: 30%;
   font-size: 12px;
   color:white;
+  display: -webkit-box;
+ -webkit-line-clamp: 4; /* количество строк */
+ -webkit-box-orient: vertical;
+  overflow: hidden;
+
 }
 
