@@ -10,19 +10,19 @@ bmiForm.addEventListener('submit', function(event) {
 });
 
 function calculateBMI() {
-    const height = parseFloat(heightInput.value) / 100; // CM visoti v meteri
+    const height = parseFloat(heightInput.value) / 100; // Сантиметрі в метрі
     const weight = parseFloat(weightInput.value);
-    const bmi = weight / (height * height); // BMI formula
+    const bmi = weight / (height * height); // BMI формула
 
     resultElement.textContent = `Your BMI: ${bmi.toFixed(2)}`;
 
     if (bmi < 18.5) {
-        statusElement.textContent = 'Underweight';
+        statusElement.textContent = 'Похавай';
     } else if (bmi >= 18.5 && bmi < 24.9) {
-        statusElement.textContent = 'Normal weight';
+        statusElement.textContent = 'Пойдет';
     } else if (bmi >= 24.9 && bmi < 29.9) {
-        statusElement.textContent = 'Overweight';
+        statusElement.textContent = 'Зашей рот';
     } else {
-        statusElement.textContent = 'Obesity';
+        statusElement.textContent = 'Жиробас';
     }
 }
