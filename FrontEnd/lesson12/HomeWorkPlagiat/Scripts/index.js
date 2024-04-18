@@ -14,7 +14,7 @@ function calculateBMI() {
     const weight = parseFloat(weightInput.value);
     const bmi = weight / (height * height); // BMI формула
 
-    resultElement.textContent = `Your BMI: ${bmi.toFixed(2)}`;
+    resultElement.textContent = `Твій BMI: ${bmi.toFixed(2)}`;
 
     if (bmi < 18.5) {
         statusElement.textContent = 'Сухопарий';
