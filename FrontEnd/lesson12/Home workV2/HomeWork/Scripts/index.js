@@ -10,7 +10,7 @@ bmiForm.addEventListener('submit', function(event) {
 });
 
 function calculateBMI() {
-    const height = parseFloat(heightInput.value) / 100; // Convert height to meters
+    const height = parseFloat(heightInput.value) / 100; // CM visoti v meteri
     const weight = parseFloat(weightInput.value);
     const bmi = weight / (height * height); // BMI formula
 
