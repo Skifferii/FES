@@ -24,9 +24,6 @@ const divForButton = document.querySelector ('.button');
 divForButton.append(ourButton);
 
 
-
-
-
 ourButton.addEventListener('click', functionB);
 
 
