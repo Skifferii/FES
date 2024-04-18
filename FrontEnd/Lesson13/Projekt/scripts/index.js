@@ -29,14 +29,20 @@ getToDODODDButton.addEventListener('click', recordNewItem);
 // Функция для записи нового элемента
 function recordNewItem() {
     let newItem;
-    newItem = toDODODD.value; // Получаем значение из поля ввода
+    newItem = toDODODD.value.trim(); // Получаем значение из поля ввода и удаляем лишние пробелы 
+                                     // Функция trim() применяется к newItem, чтобы удалить возможные пробелы в начале и конце введенной строки. 
+                                     // Если значение после удаления пробелов все еще не пустое, то создается новый элемент списка. 
+                                     // Если же значение пустое (после удаления пробелов), то новый элемент не создается.
+                                     // Таким образом, это обновление поможет избежать создания пустых элементов списка и обеспечит более чистый и удобный пользовательский интерфейс.
+    if (newItem !== "") {  // Проверяем, что значение не пустое
     console.log(newItem); // Выводим значение в консоль
+
     const newListItem = document.createElement("li"); // Создаем новый элемент списка
     newListItem.classList.add("list-item"); // Добавляем класс "list-item" к новому элементу
     newListItem.textContent = newItem; // Устанавливаем текст нового элемента
     list.appendChild(newListItem); // Добавляем новый элемент в список
-    
-    newListItem.addEventListener('click', stylTudaSuda); // Добавляем обработчик события клика на новый элемент
+        newListItem.addEventListener('click', stylTudaSuda); // Добавляем обработчик события клика на новый элемент
+}
 }
 
 // Функция для переключения стиля элемента
