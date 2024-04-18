@@ -17,12 +17,12 @@ function calculateBMI() {
     resultElement.textContent = `Your BMI: ${bmi.toFixed(2)}`;
 
     if (bmi < 18.5) {
-        statusElement.textContent = 'Похавай';
+        statusElement.textContent = 'Сухопарий';
     } else if (bmi >= 18.5 && bmi < 24.9) {
-        statusElement.textContent = 'Пойдет';
+        statusElement.textContent = 'Пропорційної статури';
     } else if (bmi >= 24.9 && bmi < 29.9) {
-        statusElement.textContent = 'Зашей рот';
+        statusElement.textContent = 'Зашій рота, пухкий';
     } else {
-        statusElement.textContent = 'Жиробас';
+        statusElement.textContent = 'Свиння';
     }
 }
