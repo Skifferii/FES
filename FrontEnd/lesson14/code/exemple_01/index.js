@@ -57,3 +57,39 @@ console.log(arrAFilter);
 const arrASliceResult = arrF.slice(2, 5);
 console.log(arrASliceResult);
 console.log(arrF);
+
+//sort
+// const callBackForSort = (a, b) =>{
+//     if (a < b ) {
+//         return -1;
+//     } else {return 1;
+//     }
+// }
+const callBackForSort = (a, b) => a > b ? -1 : 1;
+
+// return a-b 
+console.log( "___________________________________________________________________");
+
+const aarFcopy = [...arrF];
+
+aarFcopy.sort(callBackForSort);
+console.log(aarFcopy);
+
+
+const callBackForSortS = (a, b) => a.height < b.height ? -1 : 1;
+
+const objectF = [
+    {"name": "John", "surname": "Doe", "height": 198, "effectiveness": 15.6},
+    {"name": "Jane", "surname": "Smith", "height": 183, "effectiveness": 12.3},
+    {"name": "Mike", "surname": "Brown", "height": 202, "effectiveness": 18.4},
+    {"name": "Emily", "surname": "Davis", "height": 190, "effectiveness": 14.8},
+    {"name": "Chris", "surname": "Wilson", "height": 205, "effectiveness": 20.1}
+  ]
+  const objectFcopy = [...objectF];
+
+ objectFcopy.sort(callBackForSortS);
+  console.log(objectF);
+  console.log(objectFcopy);
+
+
+  
