@@ -2,7 +2,7 @@ const button = document.querySelector(".button")
 const nickName = document.querySelector("#input_NickName")
 
 button.addEventListener('click', recordNewNickName);
-
+nickName.addEventListener('keypress', event => event.keyCode === 13 && recordNewNickName());
 function recordNewNickName()
 
 {
