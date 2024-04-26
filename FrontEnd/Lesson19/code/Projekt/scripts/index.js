@@ -44,13 +44,14 @@ function dataWork(data){
     avatarUrlDiv.appendChild(imageDiv); // Добавляем созданный div внутрь элемента .avatar_url
  
     console.log(data)
+
      }else {
-        let noGefundenavatarUrlDiv = document.querySelector(".avatar_url");
-        let noGefundenDiv = document.createElement ("div");
-        noGefundenDiv.innerText = "LOGIN not GefundenDiv";
-        console.log("adawdawd")
-        noGefundenDiv.classList.add("oGefundenDiv");
-        noGefundenavatarUrlDiv.appendChild(noGefundenDiv);
+        let noGefundenNickDiv = document.querySelector(".avatar_url");
+        let noGefundenNick = document.createElement ("div");
+        noGefundenNick.innerText = "User not Gefunden";
+        console.log("noGefundenNic")        
+        noGefundenNick.classList.add("noGefundenNick");
+        noGefundenNickDiv.appendChild(noGefundenNick);
         
     }}
  } 
