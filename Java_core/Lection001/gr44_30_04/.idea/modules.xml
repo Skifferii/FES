@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Cosulat020524/Cosulat020524.iml" filepath="$PROJECT_DIR$/Cosulat020524/Cosulat020524.iml" />
       <module fileurl="file://$PROJECT_DIR$/gr44_30_04.iml" filepath="$PROJECT_DIR$/gr44_30_04.iml" />
     </modules>
   </component>

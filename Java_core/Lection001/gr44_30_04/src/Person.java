@@ -4,21 +4,30 @@ public class Person {
     public int height;
 
 
-    public Person (){
+
+    public Person(){
+        name = "Peter";
+        age = 60;
+            }
+
+    public Person(String name, int age){
+        this.name = name;
+        this.age = age;
+        this.height = 160;
 
     }
 
-    public Person(String personName, int personAge, int personHeight){
-        name = personName;
-        age = personAge;
-        height = personHeight;
+    public Person(String name, int age, int height){
+        this.name = name;
+        this.age = age;
+        this.height = height;
 
-    };
+    }
+
     public void canWalk(){
-        System.out.println("a person can walk");
+        System.out.println(name + " can walk");
 
-    };
-
+    }
 
 
 }
