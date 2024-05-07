@@ -6,7 +6,7 @@ public class Main {
         Account a3 = new Account("1000003", new Person("Jack", "Nickolson"));
         Account a4 = new Account("1000004", new Person("Ann", "Smith"));
 
-        Account[] accounts = {a1,a2,a3,a4};
+        Account[] accounts = {a1, a2, a3, a4};
         Bank bank = new Bank("Imperial", accounts);
 
         System.out.println(bank);
@@ -24,8 +24,8 @@ public class Main {
         System.out.println("Добавим счет:");
         bank.addNewAccount(new Account("1000007", new Person("Igor", "Sergeev")));
         System.out.println(bank);
-        bank.transfer("Lennon","Smith", 500);
-        bank.transfer("Smith","Brown", 100);
+        bank.transfer("Lennon", "Smith", 500);
+        bank.transfer("Smith", "Brown", 100);
         System.out.println(bank);
         System.out.println("------------ Transactions ----------");
         System.out.println(bank.getTransactionsArray());

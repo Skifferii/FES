@@ -4,10 +4,19 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Consultation_020524/Consultation_020524.iml" filepath="$PROJECT_DIR$/Consultation_020524/Consultation_020524.iml" />
       <module fileurl="file://$PROJECT_DIR$/Consultation_02_04_24/Consultation_02_04_24.iml" filepath="$PROJECT_DIR$/Consultation_02_04_24/Consultation_02_04_24.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson20/Demo2/Demo2.iml" filepath="$PROJECT_DIR$/lesson20/Demo2/Demo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java_core.iml" filepath="$PROJECT_DIR$/.idea/Java_core.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lection001/Lection001.iml" filepath="$PROJECT_DIR$/Lection001/Lection001.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lesson17/Lesson01.iml" filepath="$PROJECT_DIR$/Lesson17/Lesson01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson17/Lesson17.iml" filepath="$PROJECT_DIR$/Lesson17/Lesson17.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lesson18/Lesson18.iml" filepath="$PROJECT_DIR$/Lesson18/Lesson18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson20/Lesson20Demo/Lesson20Demo.iml" filepath="$PROJECT_DIR$/lesson20/Lesson20Demo/Lesson20Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson20/code/d20240507_2/d20240507_2.iml" filepath="$PROJECT_DIR$/lesson20/code/d20240507_2/d20240507_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson19/demo20240506_1/demo20240506_1.iml" filepath="$PROJECT_DIR$/Lesson19/demo20240506_1/demo20240506_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson20/demo20240506_1/demo20240506_11.iml" filepath="$PROJECT_DIR$/lesson20/demo20240506_1/demo20240506_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson19/demo20240506_equals/demo20240506_equals.iml" filepath="$PROJECT_DIR$/Lesson19/demo20240506_equals/demo20240506_equals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson19/demo_20240506_list/demo_20240506_list.iml" filepath="$PROJECT_DIR$/Lesson19/demo_20240506_list/demo_20240506_list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson19/dz20240506_1/dz20240506_1.iml" filepath="$PROJECT_DIR$/Lesson19/dz20240506_1/dz20240506_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson20/lesson20.iml" filepath="$PROJECT_DIR$/lesson20/lesson20.iml" />
     </modules>
   </component>
 </project>
