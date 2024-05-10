@@ -8,7 +8,15 @@ class Rectangle extends Shape {
     }
 
     @Override
-    public double calculateArea() {
+    public String toString() {
+        return "Rectangle{" +
+                "length=" + length +
+                ", width=" + width + " " + super.toString() +
+                '}';
+    }
+
+    @Override
+    public double calcArea() {
         return length * width;
     }
 }
