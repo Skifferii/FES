@@ -7,26 +7,25 @@ public class Main {
         shapes.add(new Circle(5.0));
         shapes.add(new Square(4.0));
         shapes.add(new Rectangle(3.0, 6.0));
-        shapes.add(new Circle(7.0));
 
         double totalArea = calculateTotalArea(shapes);
         System.out.println("Total area of all shapes: " + totalArea);
 
         Shape largestShape = findLargestShape(shapes);
-        System.out.println("Shape with largest area: " + largestShape.getClass().getSimpleName() + " with area " + largestShape.calculateArea());
+        System.out.println("Shape with largest area: " + largestShape.getClass().getSimpleName() + " with area " + largestShape.calcArea());
 
         double threshold = 50.0;
         List<Shape> largeShapes = findShapesWithAreaGreaterThan(shapes, threshold);
         System.out.println("Shapes with area greater than " + threshold + ":");
         for (Shape shape : largeShapes) {
-            System.out.println(shape.getClass().getSimpleName() + " with area " + shape.calculateArea());
+            System.out.println(shape.getClass().getSimpleName() + " with area " + shape.calcArea());
         }
     }
 
     public static double calculateTotalArea(List<Shape> shapes) {
         double totalArea = 0.0;
         for (int i = 0; i < shapes.size(); i++) {
-            totalArea += shapes.get(i).calculateArea();
+            totalArea += shapes.get(i).calcArea();
         }
         return totalArea;
     }
@@ -35,7 +34,7 @@ public class Main {
         Shape largestShape = null;
         double maxArea = Double.MIN_VALUE;
         for (int i = 0; i < shapes.size(); i++) {
-            double area = shapes.get(i).calculateArea();
+            double area = shapes.get(i).calcArea();
             if (area > maxArea) {
                 maxArea = area;
                 largestShape = shapes.get(i);
@@ -47,7 +46,7 @@ public class Main {
     public static List<Shape> findShapesWithAreaGreaterThan(List<Shape> shapes, double threshold) {
         List<Shape> largeShapes = new ArrayList<>();
         for (int i = 0; i < shapes.size(); i++) {
-            if (shapes.get(i).calculateArea() > threshold) {
+            if (shapes.get(i).calcArea() > threshold) {
                 largeShapes.add(shapes.get(i));
             }
         }
