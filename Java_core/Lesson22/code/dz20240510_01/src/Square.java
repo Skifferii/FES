@@ -1,20 +1,7 @@
-class Square extends Shape {
+class Square extends Rectangle {
     private double side;
 
     public Square(double side) {
-
-        this.side = side;
-    }
-
-    @Override
-    public String toString() {
-        return "Square{" +
-                "side=" + side + " " + super.toString() +
-                '}';
-    }
-
-    @Override
-    public double calcArea() {
-        return side * side;
+        super (side, side);
     }
 }

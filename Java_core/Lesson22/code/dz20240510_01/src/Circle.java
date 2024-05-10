@@ -1,9 +1,11 @@
 class Circle extends Shape {
     private double radius;
+    private double area=0;
+    private boolean isCalculeted = false;
 
     public Circle(double radius) {
-
         this.radius = radius;
+
     }
 
     @Override
@@ -15,7 +17,10 @@ class Circle extends Shape {
 
     @Override
     public double calcArea() {
-
-        return Math.PI * radius * radius;
+        if (!isCalculeted){
+            area = (Math.PI * radius * radius);
+            isCalculeted = true;
+        }
+        return area;
     }
 }

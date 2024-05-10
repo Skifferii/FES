@@ -1,22 +1,33 @@
 class Rectangle extends Shape {
-    private double length;
-    private double width;
+    private double sideA;
+    private double sideB;
+    private double area ;
+    private boolean isCalculeted = false;
 
-    public Rectangle(double length, double width) {
-        this.length = length;
-        this.width = width;
+    public Rectangle(double sideA, double sideB) {
+        this.sideA = sideA;
+        this.sideB = sideB;
+        area = sideA * sideB;
     }
 
     @Override
     public String toString() {
-        return "Rectangle{" +
-                "length=" + length +
-                ", width=" + width + " " + super.toString() +
-                '}';
-    }
 
+        if (sideA == sideB) {
+            return "Square{" +
+                    "side=" + sideA +
+                    '}';
+        } else {
+
+
+            return "Rectangle{" +
+                    "length=" + sideA +
+                    ", width=" + sideB + " " + super.toString() +
+                    '}';
+        }
+    }
     @Override
     public double calcArea() {
-        return length * width;
+        return area;
     }
 }
