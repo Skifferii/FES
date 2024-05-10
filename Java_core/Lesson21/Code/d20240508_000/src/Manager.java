@@ -9,11 +9,7 @@ public class Manager  extends Employee {
 
     @Override
     public String toString() {
-        return "Manager{" +
-                "name='" + getName() + '\'' +
-                ", salaray=" + getSalaray() +
-                ", bonus=" + bonus +
-                '}';
+        return "Manager{"  + super.toString() +'}';
     }
 
 

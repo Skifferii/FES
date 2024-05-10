@@ -8,10 +8,7 @@ public class QAEngineer  extends Employee {
 
     @Override
     public String toString() {
-        return "QAEngineer{" +
-                "name='" + getName() + '\'' +
-                ", salaray=" + getSalaray() +
-                '}';
+        return "QAEngineer{" + super.toString() +'}';
     }
     public void work(){
         System.out.println("i'm engineer " + getName() +". I engineering ");

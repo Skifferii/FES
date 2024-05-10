@@ -6,10 +6,7 @@ public class Programmer extends Employee {
 
     @Override
     public String toString() {
-        return "Programmer{" +
-                "name='" + getName() + '\'' +
-                ", salaray=" + getSalaray() +
-                '}';
+        return "Programmer{"  + super.toString() +'}';
     }
     public void work(){
         System.out.println("i'm programer " + getName() +". I write code ");
