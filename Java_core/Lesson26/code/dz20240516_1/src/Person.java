@@ -4,12 +4,16 @@ public class Person {
     private int age;
     private String email;
 
-
     public Person(String firstName, String lastName, int age, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return firstName + " " + lastName + " (" + age + ") "  + email;
     }
 
     public String getFirstName() {
@@ -27,10 +31,4 @@ public class Person {
     public String getEmail() {
         return email;
     }
-
-    @Override
-    public String toString() {
-        return firstName +  " " + lastName + " ("  + age+ ") " + email ;
-    }
 }
-

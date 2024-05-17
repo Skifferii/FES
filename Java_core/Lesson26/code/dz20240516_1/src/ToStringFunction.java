@@ -1,3 +1,3 @@
 public interface ToStringFunction {
-    String apply (Person p);
+    String apply(Person p);
 }
