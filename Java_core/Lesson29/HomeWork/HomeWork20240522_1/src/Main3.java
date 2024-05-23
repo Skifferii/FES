@@ -23,8 +23,7 @@ public class Main3 {
 
     public static String join2(List<Person> list) {
         StringBuilder result = new StringBuilder();
-        StringBuffer result2 = new StringBuffer(); // mnogopotochniy
-        ;
+
         int counter = 1;
         for (Person str : list) {
             result.append(counter++ + ")  " + str.getName().charAt(0) + ". ").append(str.getLastName()).append("; ");
