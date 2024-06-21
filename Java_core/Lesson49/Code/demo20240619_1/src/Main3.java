@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Main2 {
+public class Main3 {
     public static void main(String[] args){
         copy();
 
@@ -8,14 +8,20 @@ public class Main2 {
     public static void copy () {
         try (InputStream is = new FileInputStream("c:/333/1.mp4");
             OutputStream os= new FileOutputStream("c:/333/1copy.mp4")){
+
+            int size = 1024*1024*10;
+            byte [] data = new byte[size];
+
             int count=0;
-            int data;
-            while ((data= is.read())!=-1){
-                count++;
-                if (count% 100000==0){
-                    System.out.println(count);
+
+            while ((count= is.read(data))!=-1){
+
+                System.out.println(count);
+                if (count<size){
+                    os.write(data, 0, count);
+                }else {
+                    os.write(data);
                 }
-                os.write(data);
             }
         } catch (IOException e){
             e.printStackTrace();

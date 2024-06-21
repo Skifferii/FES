@@ -105,18 +105,34 @@ class MyLinkedListTest {
     }
 
     @Test
-    @DisplayName("remove last element")
+    @DisplayName("remove () last element")
     void remove3() {
         MyList list = new MyLinkedList();
         list.add("Jack");
         list.add("John");
         list.add("Nick");
-        list.remove(0);
-        list.remove(0);
-        list.remove(0);
+        list.remove( );
+
+        list.remove( );
+        list.remove( );
 
         Assertions.assertEquals(0, list.size());
         Assertions.assertNull(list.get(0));
+    }
+
+    @Test
+    @DisplayName("remove ()last element from single element list")
+    void remove4() {
+        MyList list = new MyLinkedList();
+        list.add("Jack");
+        String removedString = list.remove( );
+
+
+        Assertions.assertAll(
+                ()-> Assertions.assertEquals(0, list.size()),
+                ()->Assertions.assertEquals("Jack", removedString),
+                ()->Assertions.assertNull(list.get(0))
+        );
     }
 
 

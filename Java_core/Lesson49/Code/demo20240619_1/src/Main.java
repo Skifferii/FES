@@ -1,5 +1,38 @@
+import java.io.*;
+
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+    public static void main(String[] args)
+    {
+
+        try (OutputStream outputStream = new FileOutputStream("1")){
+
+            outputStream.write (65);
+            outputStream.write (66);
+            outputStream.write (67);
+            outputStream.write (10);
+            //outputStream.write (13);
+            outputStream.write (65);
+            outputStream.write (66);
+            outputStream.write (67);
+
+        } catch (IOException e){
+            System.out.println("Ups alles kaput");
+    }
+
+        try (InputStream is = new FileInputStream("1")){
+            int data;
+            while((data= is.read())!=-1) {
+                System.out.printf("%c", data);
+            }
+        }catch (IOException e){
+            System.out.println("Ups alles kaput");
+        }
+
+
+
+
+
+
     }
 }

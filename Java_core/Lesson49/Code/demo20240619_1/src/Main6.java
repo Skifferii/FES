@@ -1,20 +1,25 @@
-import java.io.*;
-
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.URL;
+import java.nio.file.Path;
+import java.util.Arrays;
+import java.util.List;
 
-public class Main5 {
-    public static void main(String[] args) throws IOException {
-
-        URL url  = new URL("https://www.ait-tr.de/");
-        try (InputStream inputStream= new BufferedInputStream(url.openStream());) {
-            int data;
-            while ((data = inputStream.read()) != -1) {
-
-                    System.out.printf("%c", data);
-
-            }
+public class Main6 {
+    public static void main(String[] args) {
+        File file = new File(("c:\\333"));
+        System.out.println(file.isFile());
+        if (file.isDirectory()){
+            String[] list= file.list();
+            Arrays.asList(list).forEach(s-> System.out.println(s));
         }
+        Path path = Path.of("c://333//1.mp4");
+
 
     }
+
+
 
 }

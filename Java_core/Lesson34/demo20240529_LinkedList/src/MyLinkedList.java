@@ -49,6 +49,29 @@ public class MyLinkedList implements MyList {
     }
 
     @Override
+    public String remove() {
+        if (tail != null) {
+            Node prev = tail.getPrev();
+            String removedValue =tail.getValue();
+            if (prev == null) {
+                head = null;
+                tail = null;
+
+            } else {
+                prev.setNext(tail.getNext());
+                tail.setPrev(null);
+                tail =prev;
+            }
+            size --;
+            return removedValue;
+        }else{
+
+                return null;
+            }
+
+    }
+
+    @Override
     public String set(int index, String element) {
         return null;
     }

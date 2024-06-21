@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface Printable {
+public interface Printable {
+
+   void print (String msg);
 }
